@@ -1,0 +1,21 @@
+
+
+
+##ページの内訳
+メインページ
+    http://localhost:3001/
+
+   
+
+
+##必要なパッケージをインストールします。
+
+    npm init -y
+
+##データベースを初期化します。
+
+    npm install express express-fileupload sqlite3
+
+##サーバーを起動
+
+    node server.js

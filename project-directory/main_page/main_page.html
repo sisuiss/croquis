@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slideshow</title>
+    <link rel="stylesheet" href="main_page/main-styles.css">
+</head>
+<body>
+    <div class="top-container">
+        <h1>Welcome to Photo Slideshow</h1>
+    </div>
+    <div class="settings-container">
+        <h2>Settings</h2>
+        <form>
+            <label for="displayTime">Display Time (seconds):</label>
+            <select id="displayTime">
+                <option value="30">30</option>
+                <option value="60">60</option>
+                <option value="120">120</option>
+                <option value="180">180</option>
+                <option value="600">600</option>
+            </select>
+            <br>
+            <label for="numImages">Number of Images to Display (max 100):</label>
+            <input type="number" id="numImages" name="numImages" min="1" max="100">
+            <br>
+            <label for="target">Target:</label>
+            <select id="target">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="number" id="customTarget" name="customTarget" min="1" max="100" placeholder="Enter custom target">
+        </form>
+    </div>
+    <div class="mode-selection-container">
+        <p>Select which slideshow you want to view:</p>
+        <div class="mode-selection">
+            <a href="user_page/userimage.html" class="mode-button" id="userMode">User Images</a>
+            <a href="own_page/ownimage.html" class="mode-button" id="ownMode">Own Images</a>
+        </div>
+    </div>
+    <script src="main_page/main-script.js"></script>
+</body>
+</html>

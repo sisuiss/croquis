@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Images Slideshow</title>
+    <link rel="stylesheet" href="own-styles.css">
+</head>
+<body>
+    <div class="top-container">
+        <div class="loop-container">
+            <input type="checkbox" id="loopCheckbox" checked>
+            <label for="loopCheckbox">Loop</label>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div id="targetContainer">
+            <div id="targetDisplay"></div>
+        </div>
+        <div id="countdownContainer" class="hidden">
+            <div id="countdown"></div>
+        </div>
+        <img id="slideshow" src="" alt="Slideshow" style="display:none;">
+    </div>
+    <div class="slideshow-navigation-container">
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <div class="navigation">
+            <button id="prevButton" class="nav-button">◀</button>
+            <button id="stopButton" class="nav-button">■</button>
+            <button id="nextButton" class="nav-button">▶</button>
+            <img src="../images/button_Back_01.svg" alt="Main Page" id="backButton" class="nav-button">
+        </div>
+    </div>
+    <script src="own-script.js"></script>
+</body>
+</html>
